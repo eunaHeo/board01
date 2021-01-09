@@ -2,6 +2,7 @@ package com.board.domain;
 
 import java.util.Date;
 
+
 public class BoardVO {
 
 /*
@@ -19,7 +20,9 @@ public class BoardVO {
 	private int bno;
 	private String title;
 	private String content;
+	private String writer;
 	private Date regDate;
+	private int viewCnt;
 	public int getBno() {
 		return bno;
 	}
@@ -38,6 +41,12 @@ public class BoardVO {
 	public void setContent(String content) {
 		this.content = content;
 	}
+	public String getWriter() {
+		return writer;
+	}
+	public void setWriter(String writer) {
+		this.writer = writer;
+	}
 	public Date getRegDate() {
 		return regDate;
 	}
@@ -50,7 +59,6 @@ public class BoardVO {
 	public void setViewCnt(int viewCnt) {
 		this.viewCnt = viewCnt;
 	}
-	private int viewCnt;
 	
 	//Getter와 Setter가 있어야 VO의 데이터를 사용할 수 있다.
 }
